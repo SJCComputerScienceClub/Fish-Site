@@ -18,13 +18,13 @@
       "sizes": "512x512"
     }
   ],
-  "id": "/?source=pwa",
-  "start_url": "/?source=pwa",
+  "id": "/",
+  "start_url": "/",
   "background_color": "#1E81B0",
   "display": "fullscreen",
   "scope": "/",
-  "theme_color": "#5133D6",
+  "theme_color": "#1E81B0",
   "shortcuts": [],
-  "description": "A viewer for the digital versions of the St. John's College Highschool Inlight Magazine",
+  "description": "A viewer for the fish tank",
   "screenshots": []
 }
