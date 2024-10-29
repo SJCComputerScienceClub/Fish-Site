@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Filefish</title>
+<link rel="stylesheet" href="style.css">
+</head>
+​
+<body class="detail">
+    <div class="container">
+        <img id="detailBanner" src="https://cdn.theatlantic.com/thumbor/cE9W6XBmyMfXOaHAs_dMYWVtZrI=/0x100:3456x2044/960x540/media/img/2014/05/shutterstock_141051217/original.jpg">
+            <a href="index.html" id="backBtn"><img src="images/chevronBackSymbol.png"></a>
+            <h1 id="detailTitle">Clown Fish</h1>
+            <img id="fishImg" ondblclick="toggle3d()" src="images/clownFishIcon.png" class="circleImage">
+            <model-viewer id="fishModel" ondblclick="toggle3d()" class="circleImage" alt="" src="models/clownFishModel.glb" ar poster="images/clownFishIcon.png" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+            <img class="scaleBtn" src="images/growShrinkSymbol.png" onclick="scale()">
+            </div>
+    <p class="description">
+        Common Name: Filefish<br>
+        Scientific Name: Acreichthys tomentosus<br>
+        Adult Size: 5 inches<br>
+        Habitat: Indo-Pacific <br>
+        Behavior: Peaceful<br>
+        Lifespan: 3 Years<br>
+        Diet: Omnivore<br>
+        Reproduction: Separate male and female, with the females showing rounded abdomen prior to fertilization. Female will lay eggs on a rock and guard them until hatched<br>
+        Cool Facts: Known for their ability to eat nuisance aiptasia, can also modify coloration<br>
+        Other names: Foolfish, Leatherjackers, Shingles  
+    </p>
+</body>
+​<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script src="fishTank.js"></script>
+</html>
+
+<!--<img src="images/clownFishIcon.png" class="circleImage">-->
+​
