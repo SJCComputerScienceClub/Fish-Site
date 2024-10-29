@@ -1,6 +1,6 @@
 {
-  "short_name": "Inlight",
-  "name": "SJC Inlight Magazine",
+  "short_name": "Fish Tank",
+  "name": "SJC Fish Tank PWA",
   "icons": [
     {
       "src": "/icon.svg",
@@ -20,8 +20,8 @@
   ],
   "id": "/?source=pwa",
   "start_url": "/?source=pwa",
-  "background_color": "#5133D6",
-  "display": "standalone",
+  "background_color": "#1E81B0",
+  "display": "fullscreen",
   "scope": "/",
   "theme_color": "#5133D6",
   "shortcuts": [],
