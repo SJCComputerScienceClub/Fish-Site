@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Clown Fish</title>
-<link rel="stylesheet" href="style.css">
-</head>
-​
-<body class="detail">
-    <div class="container">
-        <img id="detailBanner" src="images/clownFishBanner.webp">
-            <a href="index.html" id="backBtn"><img src="images/chevronBackSymbol.png"></a>
-            <h1 id="detailTitle">Clown Fish</h1>
-            <img id="fishImg" ondblclick="toggle3d()" src="images/clownFishIcon.png" class="circleImage">
-            <model-viewer id="fishModel" ondblclick="toggle3d()" class="circleImage" alt="" src="models/clownFishModel.glb" ar poster="images/clownFishIcon.png" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
-            <img class="scaleBtn" src="images/growShrinkSymbol.png" onclick="scale()">
-            <h3 id="modelMessage" class="modelMessage">Double Click Window to Toggle 3D Viewing Mode</h3>
-            </div>
-    <p class="description">
-        Common Name: Platinum Clownfish<br>
-        Scientific Name: Amphiprion percula<br>
-        Adult Size: 3 inches<br>
-        Habitat: Indian, Pacific Oceans, Red Sea<br>
-        Behavior: Semi-Agressive<br>
-        Lifespan: 3-6 years<br>
-        Diet: Omnivore<br>
-        Reproduction: External Fertilization and are all born male <br>
-        Cool Facts: Can change sex<br>
-        Other names: Anemone fish        
-    </p>
-</body>
-​<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<script src="fishTank.js"></script>
+    <head>
+        <title>Clown Fish</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script src="fishTank.js"></script>
+    </head>
+    
+    <body class="detail">
+        <div class="container">
+            <img id="detailBanner" src="images/clownFishBanner.webp">
+                <a href="index.html" id="backBtn"><img src="images/chevronBackSymbol.png"></a>
+                <h1 id="detailTitle">Clown Fish</h1>
+                <img id="fishImg" ondblclick="toggle3d()" src="images/clownFishIcon.png" class="circleImage">
+                <model-viewer id="fishModel" ondblclick="toggle3d()" class="circleImage" alt="" src="models/clownFishModel.glb" ar poster="images/clownFishIcon.png" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+                <img class="scaleBtn" src="images/growShrinkSymbol.png" onclick="scale()">
+                <h3 id="modelMessage" class="modelMessage">Double Click Window to Toggle 3D Viewing Mode</h3>
+                </div>
+        <p class="description">
+            Common Name: Platinum Clownfish<br>
+            Scientific Name: Amphiprion percula<br>
+            Adult Size: 3 inches<br>
+            Habitat: Indian, Pacific Oceans, Red Sea<br>
+            Behavior: Semi-Agressive<br>
+            Lifespan: 3-6 years<br>
+            Diet: Omnivore<br>
+            Reproduction: External Fertilization and are all born male <br>
+            Cool Facts: Can change sex<br>
+            Other names: Anemone fish        
+        </p>
+    </body>
 </html>
-
-<!--<img src="images/clownFishIcon.png" class="circleImage">-->
-​

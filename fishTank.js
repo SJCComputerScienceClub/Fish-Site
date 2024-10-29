@@ -1,4 +1,3 @@
-
 function toggle3d() {
     var image = document.getElementById("fishImg");
     var model = document.getElementById("fishModel");

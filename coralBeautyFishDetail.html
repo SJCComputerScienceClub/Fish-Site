@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Coral Beauty Angelfish</title>
-<link rel="stylesheet" href="style.css">
-</head>
-​
-<body class="detail">
-    <div class="container">
-        <img id="detailBanner" src="images/coralBeautyFishBanner.jpeg">
-            <a href="index.html" id="backBtn"><img src="images/chevronBackSymbol.png"></a>
-            <h1 id="detailTitle">Coral Beauty Angelfish</h1>
-            <img id="fishImg" ondblclick="toggle3d()" src="images/coralBeautyFishIcon.png" class="circleImage">
-            <model-viewer id="fishModel" ondblclick="toggle3d()" class="circleImage" alt="" src="models/coralBeautyFishModel.glb" ar poster="images/coralBeautyFishIcon.png" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
-            <img class="scaleBtn" src="images/growShrinkSymbol.png" onclick="scale()">
-            <h3 id="modelMessage" class="modelMessage">Double Click Window to Toggle 3D Viewing Mode</h3>
-            </div>
-    <p class="description">
-        Common Name: Coral Beauty Angelfish<br>
-        Scientific Name: Centropyge bispinosa<br>
-        Adult Size: 4 inches<br>
-        Habitat: Indo-Pacific, Great Barrier Reef<br>
-        Behavior: Semi-Agressive<br>
-        Lifespan: 10-15 Years<br>
-        Diet: Omnivore, primarily algae<br>
-        Reproduction: Male and female will simultaneously release sperm and egg at dusk into the water column<br>
-        Cool Facts: Is considered one of the more intelligent Angelfish<br>
-        Other names: Twospined, Dusky Angelfish    
-    </p>
-</body>
-​<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<script src="fishTank.js"></script>
-</html>
+    <head>
+        <title>Coral Beauty Angelfish</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
 
-<!--<img src="images/clownFishIcon.png" class="circleImage">-->
-​
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script src="fishTank.js"></script>
+    </head>
+
+    <body class="detail">
+        <div class="container">
+            <img id="detailBanner" src="images/coralBeautyFishBanner.jpeg">
+                <a href="index.html" id="backBtn"><img src="images/chevronBackSymbol.png"></a>
+                <h1 id="detailTitle">Coral Beauty Angelfish</h1>
+                <img id="fishImg" ondblclick="toggle3d()" src="images/coralBeautyFishIcon.png" class="circleImage">
+                <model-viewer id="fishModel" ondblclick="toggle3d()" class="circleImage" alt="" src="models/coralBeautyFishModel.glb" ar poster="images/coralBeautyFishIcon.png" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+                <img class="scaleBtn" src="images/growShrinkSymbol.png" onclick="scale()">
+                <h3 id="modelMessage" class="modelMessage">Double Click Window to Toggle 3D Viewing Mode</h3>
+                </div>
+        <p class="description">
+            Common Name: Coral Beauty Angelfish<br>
+            Scientific Name: Centropyge bispinosa<br>
+            Adult Size: 4 inches<br>
+            Habitat: Indo-Pacific, Great Barrier Reef<br>
+            Behavior: Semi-Agressive<br>
+            Lifespan: 10-15 Years<br>
+            Diet: Omnivore, primarily algae<br>
+            Reproduction: Male and female will simultaneously release sperm and egg at dusk into the water column<br>
+            Cool Facts: Is considered one of the more intelligent Angelfish<br>
+            Other names: Twospined, Dusky Angelfish    
+        </p>
+    </body>
+</html>

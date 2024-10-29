@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Blue Tang Fish</title>
-<link rel="stylesheet" href="style.css">
-</head>
-​
-<body class="detail">
-    <div class="container">
-        <img id="detailBanner" src="images/blueTangFishBanner.webp">
-            <a href="index.html" id="backBtn"><img src="images/chevronBackSymbol.png"></a>
-            <h1 id="detailTitle">Blue Hippo Tang Fish</h1>
-            <img id="fishImg" ondblclick="toggle3d()" src="images/blueTangFishIcon.png" class="circleImage">
-            <model-viewer id="fishModel" ondblclick="toggle3d()" class="circleImage" alt="" src="models/blueTangFishModel.glb" ar poster="images/blueTangFishIcon.png" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
-            <img class="scaleBtn" src="images/growShrinkSymbol.png" onclick="scale()">
-            <h3 id="modelMessage" class="modelMessage">Double Click Window to Toggle 3D Viewing Mode</h3>
-            </div>
-    <p class="description">
-        Common Name: Blue Hippo Tang<br>
-        Scientific Name: Paracanthurus hepatus<br>
-        Adult Size: 12 inches<br>
-        Habitat: Indo-Pacific<br>
-        Behavior: Semi-aggressive<br>
-        Lifespan: 5 years<br>
-        Diet: Herbivore<br>
-        Reproduction: External fertilization and scatter eggs<br>
-        Cool Facts: Dory from finding Nemo!<br>
-        Other Names: Regal Tang<br>
-    </p>
-    
+    <head>
+        <title>Blue Tang Fish</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
 
-</body>
-​<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<script src="fishTank.js"></script>
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script src="fishTank.js"></script>
+    </head>
+
+    <body class="detail">
+        <div class="container">
+            <img id="detailBanner" src="images/blueTangFishBanner.webp">
+                <a href="index.html" id="backBtn"><img src="images/chevronBackSymbol.png"></a>
+                <h1 id="detailTitle">Blue Hippo Tang Fish</h1>
+                <img id="fishImg" ondblclick="toggle3d()" src="images/blueTangFishIcon.png" class="circleImage">
+                <model-viewer id="fishModel" ondblclick="toggle3d()" class="circleImage" alt="" src="models/blueTangFishModel.glb" ar poster="images/blueTangFishIcon.png" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+                <img class="scaleBtn" src="images/growShrinkSymbol.png" onclick="scale()">
+                <h3 id="modelMessage" class="modelMessage">Double Click Window to Toggle 3D Viewing Mode</h3>
+                </div>
+        <p class="description">
+            Common Name: Blue Hippo Tang<br>
+            Scientific Name: Paracanthurus hepatus<br>
+            Adult Size: 12 inches<br>
+            Habitat: Indo-Pacific<br>
+            Behavior: Semi-aggressive<br>
+            Lifespan: 5 years<br>
+            Diet: Herbivore<br>
+            Reproduction: External fertilization and scatter eggs<br>
+            Cool Facts: Dory from finding Nemo!<br>
+            Other Names: Regal Tang<br>
+        </p>
+    </body>
 </html>
-​
