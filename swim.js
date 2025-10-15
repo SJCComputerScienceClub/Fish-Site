@@ -1,4 +1,4 @@
-function moveFish(fishElement) {
+/* function moveFish(fishElement) {
   const aquarium = document.getElementById('aquarium');
   const maxX = aquarium.clientWidth - fishElement.clientWidth;
   const maxY = aquarium.clientHeight - fishElement.clientHeight;
@@ -49,7 +49,7 @@ function swimFish(fish) {
   function easeInOutQuad(t) {
     return t < 0.5 ? 2*t*t : -1 + (4 - 2*t)*t;
   }
-
+*/
   function animate(time) {
     const elapsed = time - startTime;
     const progress = Math.min(elapsed / duration, 1);
