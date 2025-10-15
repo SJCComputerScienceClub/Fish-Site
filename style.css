@@ -12,7 +12,20 @@ body.detail{
 	animation: gradient 15s ease infinite;
 	height: 100vh; */
 }
+#aquarium {
+  position: relative;
+  width: 100%;
+  height: 400px;   /* or whatever size */
+  overflow: hidden;
+  background: url('water-background.jpg') no-repeat center;
+  background-size: cover;
+}
 
+.fish {
+  position: absolute;
+  width: 80px;
+  transition: transform 0.5s linear;
+}
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -39,7 +52,6 @@ img.icon{
   font-size: 50px;
 }
 
-/*Layton Addition */
 .subTitle{
   text-align: center;
   color: white;
