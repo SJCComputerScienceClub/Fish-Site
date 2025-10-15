@@ -23,7 +23,7 @@ background: linear-gradient(-45deg, #0095ff, #6bbfff, #99f3ff, #7dffe5, #8fffe3)
 
 .icon {
   position: absolute;
-  width: 80px;
+  width: 120px;
   transition: transform 0.5s linear;
 }
 @keyframes gradient {
