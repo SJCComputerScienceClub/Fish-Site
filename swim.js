@@ -9,7 +9,7 @@ function swimFish(fish) {
   const isSnail = fish.id === 'astraeaTurboSnail';
   const targetX = Math.random() * maxX;
   const targetY = isSnail
-    ? maxY  // bottom only
+    ? maxY - fish.clientHeight - 5  // bottom only
     : Math.random() * maxY;
 
   const duration = 6000 + Math.random() * 4000;
@@ -27,8 +27,13 @@ function swimFish(fish) {
     const currentX = startX + (targetX - startX) * eased;
     const currentY = startY + (targetY - startY) * eased;
 
-    const flip = targetX < startX ? -1 : 1;
-    fish.style.transform = `translate(${currentX}px, ${currentY}px) scaleX(${flip})`;
+    fish.style.left = `${currentX}px`;
+    fish.style.top = `${currentY}px`;
+
+    // flip fish left/right (skip for snail if desired)
+    if (!isSnail) {
+      fish.style.transform = `scaleX(${targetX < startX ? -1 : 1})`;
+    }
 
     if (progress < 1) {
       requestAnimationFrame(animate);
@@ -39,6 +44,11 @@ function swimFish(fish) {
 
   requestAnimationFrame(animate);
 }
+
+// start all fish after DOM loads
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll('.icon').forEach(f => swimFish(f));
+  document.querySelectorAll('.icon').forEach(f => {
+    f.style.position = 'absolute';  // ensure positioning works
+    swimFish(f);
+  });
 });
