@@ -18,10 +18,10 @@ function swimFish(fish) {
   const startY = fish.offsetTop;
 
   const isSnail = fish.id === 'astraeaTurboSnail';
+ const snailY = aquarium.clientHeight - fish.clientHeight - 10; // 10px from bottom
+
   const targetX = Math.random() * maxX;
-  const targetY = isSnail
-    ? maxY - fish.clientHeight - 3  // bottom only
-    : Math.random() * maxY;
+  const targetY = isSnail ? snailY : Math.random() * maxY;
 
   const duration = 6000 + Math.random() * 4000;
   const startTime = performance.now();
