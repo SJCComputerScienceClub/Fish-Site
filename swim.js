@@ -1,7 +1,7 @@
 const fishFacing = {
   clownFish: 1,
   blueTangFish: 1,
-  yellowTangFish: 1,
+  yellowTangFish: -1,
   bicolorFoxfaceFish: 1,
   coralBeautyFish: 1,
   orchidDottybackFish: 1,
