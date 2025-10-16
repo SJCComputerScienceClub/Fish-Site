@@ -20,7 +20,7 @@ function swimFish(fish) {
   const isSnail = fish.id === 'astraeaTurboSnail';
   const targetX = Math.random() * maxX;
   const targetY = isSnail
-    ? maxY - fish.clientHeight - 5  // bottom only
+    ? maxY - fish.clientHeight - 3  // bottom only
     : Math.random() * maxY;
 
   const duration = 6000 + Math.random() * 4000;
