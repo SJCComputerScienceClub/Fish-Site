@@ -24,8 +24,6 @@ background: linear-gradient(-45deg, #0095ff, #6bbfff, #99f3ff, #7dffe5, #8fffe3)
 .icon {
   position: absolute;
   width: 80px;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.2s linear;
   will-change: transform;
