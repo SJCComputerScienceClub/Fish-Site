@@ -1,4 +1,21 @@
+const fishFacing = {
+  clownFish: 1,
+  blueTangFish: 1,
+  yellowTangFish: 1,
+  bicolorFoxfaceFish: 1,
+  coralBeautyFish: 1,
+  orchidDottybackFish: 1,
+  astraeaTurboSnail: 1,
+  indigoDottybackFish: 1
+};
+
+
 function swimFish(fish) {
+  if (!isSnail) {
+  const flip = (targetX < startX ? -1 : 1) * fishFacing[fish.id];
+  fish.style.transform = `scaleX(${flip})`;
+}
+
   const aquarium = document.getElementById('aquarium');
   const maxX = aquarium.clientWidth - fish.clientWidth;
   const maxY = aquarium.clientHeight - fish.clientHeight;
