@@ -4,7 +4,11 @@ body.index {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.bubbler-one-regular {
+  font-family: "Bubbler One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 body.detail{
   background-color: #c9faff;
 background: linear-gradient(-45deg, #0095ff, #6bbfff, #99f3ff, #7dffe5, #8fffe3);
