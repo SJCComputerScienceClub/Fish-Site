@@ -21,7 +21,7 @@ background: linear-gradient(-45deg, #0095ff, #6bbfff, #99f3ff, #7dffe5, #8fffe3)
   background-size: cover;
 }
 
-.icon {
+#icon {
   position: absolute;
   width: 120px;
   transition: transform 0.5s linear;
