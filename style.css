@@ -27,10 +27,10 @@ background: linear-gradient(-45deg, #0095ff, #6bbfff, #99f3ff, #7dffe5, #8fffe3)
 
 .icon {
   position: absolute;
-  width: 150px;
-  transform: translate(-50%, -50%);
-  transition: transform 0.2s linear;
-  will-change: transform;
+  width: 100px;
+  height: auto;
+  transition: transform 3s ease-in-out;
+}
 	
 }
 @keyframes gradient {
