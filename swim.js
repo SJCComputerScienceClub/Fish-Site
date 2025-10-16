@@ -3,25 +3,14 @@ function swimFish(fish) {
   const maxX = aquarium.clientWidth - fish.clientWidth;
   const maxY = aquarium.clientHeight - fish.clientHeight;
 
-  // random new destination
+  const startX = fish.offsetLeft;
+  const startY = fish.offsetTop;
+
   const targetX = Math.random() * maxX;
   const targetY = Math.random() * maxY;
 
-  // starting position
-  const start = fish.getBoundingClientRect();
-  const rect = aquarium.getBoundingClientRect();
-  const startX = start.left - rect.left;
-  const startY = start.top - rect.top;
-
-  const duration = 6000 + Math.random() * 4000; // 6–10 seconds per swim
+  const duration = 6000 + Math.random() * 4000;
   const startTime = performance.now();
-
-  // Randomly flip fish direction based on movement
-  if (targetX < startX) {
-    fish.style.transform = `scaleX(-1)`; // face left
-  } else {
-    fish.style.transform = `scaleX(1)`; // face right
-  }
 
   function easeInOutQuad(t) {
     return t < 0.5 ? 2*t*t : -1 + (4 - 2*t)*t;
@@ -35,13 +24,12 @@ function swimFish(fish) {
     const currentX = startX + (targetX - startX) * eased;
     const currentY = startY + (targetY - startY) * eased;
 
-    fish.style.left = `${currentX}px`;
-    fish.style.top = `${currentY}px`;
+    const flip = targetX < startX ? -1 : 1;
+    fish.style.transform = `translate(${currentX}px, ${currentY}px) scaleX(${flip})`;
 
     if (progress < 1) {
       requestAnimationFrame(animate);
     } else {
-      // when finished, swim again
       setTimeout(() => swimFish(fish), 1000 + Math.random() * 2000);
     }
   }
@@ -49,12 +37,6 @@ function swimFish(fish) {
   requestAnimationFrame(animate);
 }
 
-window.onload = () => {
-  document.querySelectorAll('.fish').forEach(f => {
-    swimFish(f);
-  });
-};
-
-
-
-
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.icon').forEach(f => swimFish(f));
+});
