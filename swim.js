@@ -9,13 +9,7 @@ const fishFacing = {
   indigoDottybackFish: 1
 };
 
-
 function swimFish(fish) {
-  if (!isSnail) {
-  const flip = (targetX < startX ? -1 : 1) * fishFacing[fish.id];
-  fish.style.transform = `scaleX(${flip})`;
-}
-
   const aquarium = document.getElementById('aquarium');
   const maxX = aquarium.clientWidth - fish.clientWidth;
   const maxY = aquarium.clientHeight - fish.clientHeight;
@@ -47,9 +41,10 @@ function swimFish(fish) {
     fish.style.left = `${currentX}px`;
     fish.style.top = `${currentY}px`;
 
-    // flip fish left/right (skip for snail if desired)
+    // flip fish left/right (skip for snail) using fishFacing mapping
     if (!isSnail) {
-      fish.style.transform = `scaleX(${targetX < startX ? -1 : 1})`;
+      const flip = (targetX < startX ? -1 : 1) * fishFacing[fish.id];
+      fish.style.transform = `scaleX(${flip})`;
     }
 
     if (progress < 1) {
