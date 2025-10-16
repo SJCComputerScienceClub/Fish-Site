@@ -6,8 +6,11 @@ function swimFish(fish) {
   const startX = fish.offsetLeft;
   const startY = fish.offsetTop;
 
+  const isSnail = fish.id === 'astraeaTurboSnail';
   const targetX = Math.random() * maxX;
-  const targetY = Math.random() * maxY;
+  const targetY = isSnail
+    ? maxY  // bottom only
+    : Math.random() * maxY;
 
   const duration = 6000 + Math.random() * 4000;
   const startTime = performance.now();
@@ -36,7 +39,3 @@ function swimFish(fish) {
 
   requestAnimationFrame(animate);
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll('.icon').forEach(f => swimFish(f));
-});
