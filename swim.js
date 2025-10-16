@@ -39,3 +39,6 @@ function swimFish(fish) {
 
   requestAnimationFrame(animate);
 }
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.icon').forEach(f => swimFish(f));
+});
