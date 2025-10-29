@@ -103,8 +103,8 @@ font-family: "Marker Felt", fantasy;  font-weight: 900;
 
 
 #detailBanner{
-  object-fit: 80%;
-  width: 100%;
+  object-fit: cover;
+  width: 80%;
   height: 15%;
 }
 #detailTitle{
@@ -130,6 +130,7 @@ font-family: "Marker Felt", fantasy;  font-weight: 900;
 .container{
   position:relative;
   text-align: center;
+	
 }
 .circleImage{
   border-radius: 50%;
