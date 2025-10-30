@@ -100,7 +100,10 @@ font-family: "Marker Felt", fantasy;  font-weight: 900;
   bottom: 5px;
   right: 130px;
 }
-
+#seaCucumber{
+	bottom: 5px;
+	right: 50px;
+}
 
 #detailBanner{
   object-fit: cover;
