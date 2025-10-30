@@ -104,6 +104,10 @@ font-family: "Marker Felt", fantasy;  font-weight: 900;
 	bottom: 5px;
 	right: 50px;
 }
+#serpentSeaStar{
+	bottom: 5px;
+	right: 75px;
+}
 
 #detailBanner{
   object-fit: cover;
