@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Black Long-spined Urchin</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+
+        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script src="fishTank.js"></script>
+    </head>
+
+    <body class="detail">
+        <div class="container">
+            <img id="detailBanner" src="sea-cucumber_8.jpg">
+                <a href="index.html" id="backBtn"><img src="images/chevronBackSymbol.png"></a>
+                <h1 id="detailTitle">Black Long-spined Urchin</h1>
+                <img id="fishImg" ondblclick="toggle3d()" src="sea-cucumber_8 - Edited.png" class="circleImage">
+                <model-viewer id="fishModel" ondblclick="toggle3d()" class="circleImage" alt="" src="3dpea.com_sea-cucumber_8 - Edited.glb" ar poster="sea-cucumber_8 - Edited.png" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+                <img class="scaleBtn" src="images/growShrinkSymbol.png" onclick="scale()">
+                <h3 id="modelMessage" class="modelMessage">Double Click Window to Toggle 3D Viewing Mode</h3>
+                </div>
+        <p class="description">
+            Common Name: Black Long-spined Urchin<br>
+            Scientific Name: Diadema antillarum<br>
+            Adult Size: 2in - 4in<br>
+            Habitat: Tropical and subtropical marine environments in all three major oceans, primarily on coral reefs and rocky seabeds<br>
+            Behavior: Nocturnal, hiding in crevices during the day and emerging at night to feed on algae<br>
+            Lifespan: 4 - 10 years<br>
+            Diet: algae and seaweed<br>
+            Reproduction: broadcast spawning<br>
+            Cool Facts: its spines contain an irritant toxin<br>
+            Other Names: long-spined sea urchin, banded diadem, or lime urchin<br>
+        </p>
+    </body>
+</html>
