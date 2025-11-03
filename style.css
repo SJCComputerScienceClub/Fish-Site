@@ -112,6 +112,10 @@ font-family: "Marker Felt", fantasy;  font-weight: 900;
   right: 170px;
   bottom: 250px;
 }
+#disparAnthias{
+ right: 160px;
+ bottom: 225px;
+}
 #detailBanner{
   object-fit: cover;
   width: 100%;
