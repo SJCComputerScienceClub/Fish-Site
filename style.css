@@ -116,6 +116,11 @@ font-family: "Marker Felt", fantasy;  font-weight: 900;
  right: 160px;
  bottom: 225px;
 }
+#blackLong-spinedUrchin{
+	bottom: 5px;
+	right: 60px;
+}
+
 #detailBanner{
   object-fit: cover;
   width: 100%;
