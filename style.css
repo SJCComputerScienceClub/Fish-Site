@@ -204,13 +204,6 @@ p{
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: grey;
 }
-.fish-images {
-    max-height: 60vh;       /* limits image to 60% of viewport height */
-    width: auto;            /* keeps aspect ratio */
-    display: block;         /* removes inline spacing issues */
-    margin: 0 auto;         /* center horizontally */
-}
-/* Container for two-column layout */
 .fish-detail-container {
     display: flex;
     flex-direction: row;
@@ -221,30 +214,42 @@ p{
 
 /* Left side: fish image */
 .fish-image-container {
-    flex: 1;
+    flex: 2;                   /* 2/3 of the width */
     display: flex;
-    justify-content: center; /* center horizontally */
-    align-items: flex-start; /* align to top */
+    justify-content: center;    /* horizontal centering */
+    align-items: flex-start;    /* align to top */
     overflow: hidden;
 }
 
 .fish-image {
     width: 100%;
-    height: 100%;       /* stretch to container height */
-    object-fit: cover;  /* keep aspect ratio, fill container */
+    height: 100%;              /* stretch image to container height */
+    object-fit: cover;         /* fill container without distortion */
 }
 
-/* Right side: information and 3D model */
+/* Right side: info */
 .fish-info {
-    flex: 1;
+    flex: 1;                    /* 1/3 of the width */
     padding: 20px;
-    overflow-y: auto;   /* scroll if content exceeds container */
+    overflow-y: auto;           /* scroll if needed */
     font-family: "Courier New", monospace;
     font-size: 20px;
     font-weight: bold;
     color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    /* text aligned to top-left */
 }
 
+/* 3D model styling */
+.modelView {
+    border: 3px solid #00b3ad;
+    background-color: lightcyan;
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    margin-top: 20px;
+}
 
 /* Back button */
 #backBtn {
