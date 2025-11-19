@@ -230,8 +230,8 @@ p{
 
 .fish-image {
     width: 100%;
-    height: auto;
-    object-fit: cover;  /* fills container without stretching */
+    height: 100%;       /* stretch to container height */
+    object-fit: cover;  /* keep aspect ratio, fill container */
 }
 
 /* Right side: information and 3D model */
