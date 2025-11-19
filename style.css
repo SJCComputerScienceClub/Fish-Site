@@ -223,8 +223,8 @@ p{
 .fish-image-container {
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* center horizontally */
+    align-items: flex-start; /* align to top */
     overflow: hidden;
 }
 
