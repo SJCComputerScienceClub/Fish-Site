@@ -201,3 +201,9 @@ p{
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: grey;
 }
+.fish-image {
+    max-height: 60vh;       /* limits image to 60% of viewport height */
+    width: auto;            /* keeps aspect ratio */
+    display: block;         /* removes inline spacing issues */
+    margin: 0 auto;         /* center horizontally */
+}
