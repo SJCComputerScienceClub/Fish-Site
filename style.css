@@ -127,6 +127,7 @@ body.detail #detailBanner {
     height: auto;
     object-fit: contain;
     display: block;
+	float:left;
     
 }
 #detailTitle{
