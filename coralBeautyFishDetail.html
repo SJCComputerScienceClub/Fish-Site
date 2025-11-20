@@ -1,32 +1,39 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Coral Beauty Angelfish</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coral Beauty Angelfish</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail">
+    <!-- Page container -->
+    <div class="fish-detail-container">
 
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-        <script src="fishTank.js"></script>
-    </head>
+        <!-- Left side: fish image -->
+        <div class="fish-image-container">
+            <img src="images/coralBeautyFishBanner.jpg" alt="Coral Beauty Angelfish" class="fish-image">
+        </div>
 
-    <body class="detail">
-        <div class="container">
-            <img id="detailBanner" src="images/coralBeautyFishBanner.jpg">
-                <a href="index.html" id="backBtn"><img src="images/chevronBackSymbol.png"></a>
-                <h1 id="detailTitle">Coral Beauty Angelfish</h1>
-               
-                </div>
-        <p class="description">
-            Common Name: Coral Beauty Angelfish<br>
-            Scientific Name: Centropyge bispinosa<br>
-            Adult Size: 4 inches<br>
-            Habitat: Indo-Pacific, Great Barrier Reef<br>
-            Behavior: Semi-Agressive<br>
-            Lifespan: 10-15 Years<br>
-            Diet: Omnivore, primarily algae<br>
-            Reproduction: Male and female will simultaneously release sperm and egg at dusk into the water column<br>
-            Cool Facts: Is considered one of the more intelligent Angelfish<br>
-            Other names: Twospined, Dusky Angelfish    
-        </p>
-    </body>
+        <!-- Right side: information and 3D model -->
+        <div class="fish-info">
+            <h1>Coral Beauty Angelfish</h1>
+            <p><strong>Scientific Name:</strong> Centropyge bispinosa</p>
+            <p><strong>Common Name:</strong> Coral Beauty Angelfishh</p>
+            <p><strong>Other Names:</strong> Twospined, Dusky Angelfish   </p>
+            <p><strong>Behavior:</strong> Semi-Aggresive</p>
+            <p><strong>Habitat:</strong>Indo-Pacific, Great Barrier Reef</p>
+            <p><strong>Diet:</strong> Omnivore, primarily algae</p>
+            <p><strong>Size:</strong> 4 inches</p>
+            <p><strong>Lifespan:</strong> 10-15 Years</p>
+            <p><strong>Reproduction:</strong> Male and female will simultaneously release sperm and egg at dusk into the water column</p>
+            <p><strong>Cool Facts:</strong> Is considered one of the more intelligent Angelfish</p>
+            <!-- Optional back button -->
+            <a id="backBtn" href="index.html">&#8592; Back</a>
+             
+        </div>
+
+    </div>
+</body>
 </html>
+
+
