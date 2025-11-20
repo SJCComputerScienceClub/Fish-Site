@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Sea Cucumber</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sea Cucumber</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail">
+    <!-- Page container -->
+    <div class="fish-detail-container">
 
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-        <script src="fishTank.js"></script>
-    </head>
+        <!-- Left side: fish image -->
+        <div class="fish-image-container">
+            <img src="sea-cucumber_8.jpg" alt="Sea Cucumber" class="fish-image">
+        </div>
 
-    <body class="detail">
-        <div class="container">
-            <img id="detailBanner" src="sea-cucumber_8.jpg">
-                <a href="index.html" id="backBtn"><img src="images/chevronBackSymbol.png"></a>
-                <h1 id="detailTitle">Sea Cucumber</h1>
-                </div>
-        <p class="description">
-            Common Name: Sea Cucumber<br>
-            Scientific Name: Holothuroidea<br>
-            Adult Size: 1in - 6ft<br>
-            Habitat: Found worldwide in sand, mud, rocks, and coral<br>
-            Behavior: Feeds by sifting sediment of filtering passing food and nocturnal foraging<br>
-            Lifespan: 5 - 10 years<br>
-            Diet: plankton, algae, bacteria<br>
-            Reproduction: Can produce sexually through broadcast spawning and asexually through fission<br>
-            Cool Facts: Defends itself by expelling its internal organs which it grows back later<br>
-            Other Names: Sea pickles or sea slugs<br>
-        </p>
-    </body>
+        <!-- Right side: information and 3D model -->
+        <div class="fish-info">
+            <h1>Sea Cucumberk</h1>
+            <p><strong>Scientific Name:</strong> Holothuroidea</p>
+            <p><strong>Common Name:</strong> Orchid Dottyback</p>
+             <p><strong>Other Names:</strong> Sea pickles or sea slugs</p>
+             <p><strong>Behavior:</strong>Feeds by sifting sediment of filtering passing food and nocturnal foraging </p>
+            <p><strong>Habitat:</strong> Found worldwide in sand, mud, rocks, and coral</p>
+            <p><strong>Diet:</strong> Plankton, algae, bacteria</p>
+            <p><strong>Size:</strong> 1in - 6ft</p>
+            <p><strong>Lifespan:</strong> 5 - 10 years</p>
+            <p><strong>Reproduction:</strong> Can produce sexually through broadcast spawning and asexually through fission</p>
+            <p><strong>Cool Facts:</strong>Defends itself by expelling its internal organs which it grows back later</p>
+
+            <!-- Optional back button -->
+            <a id="backBtn" href="index.html">&#8592; Back</a>
+        </div>
+
+    </div>
+</body>
 </html>
+
