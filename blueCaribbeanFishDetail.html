@@ -1,32 +1,36 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Blue Caribbean Tang</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blue Caribbean Tang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail">
+    <!-- Page container -->
+    <div class="fish-detail-container">
 
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-        <script src="fishTank.js"></script>
-    </head>
+        <!-- Left side: fish image -->
+        <div class="fish-image-container">
+            <img src="iUntitled design.jpg" alt="Blue Caribbean Tang" class="fish-image">
+        </div>
 
-    <body class="detail">
-        <div class="container">
-            <img id="detailBanner" src="Untitled design.jpg">
-                <a href="index.html" id="backBtn"><img src="images/chevronBackSymbol.png"></a>
-                <h1 id="detailTitle">Blue Caribbean Tang</h1>
-               
-                </div>
-        <p class="description">
-            Common Name: Blue Caribbean Tang<br>
-            Scientific Name: Acanthurus Coeruleus<br>
-            Adult Size: 15 inches<br>
-            Habitat: Atlantic<br>
-            Behavior: Aggresive<br>
-            Lifespan: 12-15 years<br>
-            Diet: Herbivore<br>
-            Reproduction: External fertilization and scatter eggs<br>
-            Cool Facts: Their caudal spine can cut like a scalpel, gicing them their nicknames<br>
-            Other Names: Blue Tang, Blue Surgeonfish, Blue Doctorfish<br>
-        </p>
-    </body>
+        <!-- Right side: information and 3D model -->
+        <div class="fish-info">
+            <h1>Blue Caribbean Tang</h1>
+            <p><strong>Scientific Name:</strong> Acanthurus Coeruleus</p>
+            <p><strong>Common Name:</strong> Blue Caribbean Tang</p>
+            <p><strong>Other Names:</strong> Blue Tang, Blue Surgeonfish, Blue Doctorfish</p>
+            <p><strong>Behavior:</strong> Aggresive</p>
+            <p><strong>Habitat:</strong>Atlantic</p>
+            <p><strong>Diet:</strong> Herbivore</p>
+            <p><strong>Size:</strong> 15 inches</p>
+            <p><strong>Lifespan:</strong> 12-15 years</p>
+            <p><strong>Reproduction:</strong> External fertilization and scatter eggs</p>
+            <p><strong>Cool Facts:</strong> Their caudal spine can cut like a scalpel, gicing them their nicknames</p>
+            <!-- Optional back button -->
+            <a id="backBtn" href="index.html">&#8592; Back</a>
+        </div>
+
+    </div>
+</body>
 </html>
