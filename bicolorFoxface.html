@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Bicolor Foxface</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bicolor Foxface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail">
+    <!-- Page container -->
+    <div class="fish-detail-container">
 
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-        <script src="fishTank.js"></script>
-    </head>
+        <!-- Left side: fish image -->
+        <div class="fish-image-container">
+            <img src="images/images/bicolorFoxfaceFishBanner.jpg" alt="Bicolor Foxface" class="fish-image">
+        </div>
 
-    <body class="detail">
-        <div class="container">
-            <img id="detailBanner" src="images/bicolorFoxfaceFishBanner.jpg">
-                <a href="index.html" id="backBtn"><img src="images/chevronBackSymbol.png"></a>
-                <h1 id="detailTitle">Bicolor Foxface</h1>
-                
-                </div>
-        <p class="description">
-            Common Name: Bicolor Foxface<br>
-            Scientific Name: Siganus upsi<br>
-            Adult Size: 7-9 inches, with females being larger than males<br>
-            Habitat: Western pacific tropical marine reefs around Fiji<br>
-            Behavior: Diurnal (active during the day) with adults in pairs and juveniles forming schools<br>
-            Lifespan: 5-7 years<br>
-            Diet: Omnivore; algae and zooplankton<br>
-            Reproduction: External fertilization with eggs becoming part of the plankton<br>
-            Cool Facts: Spines are venomous and used for defense<br>
-            Other Names: Upsi Spinfoot, Rabbitfish<br>
-        </p>
-    </body>
+        <!-- Right side: information and 3D model -->
+        <div class="fish-info">
+            <h1>Bicolor Foxface</h1>
+            <p><strong>Scientific Name:</strong> Siganus upsi</p>
+            <p><strong>Common Name:</strong> Bicolor Foxface</p>
+            <p><strong>Other Names:</strong> Upsi Spinfoot, Rabbitfish</p>
+            <p><strong>Behavior:</strong> Diurnal (active during the day) with adults in pairs and juveniles forming schools</p>
+            <p><strong>Habitat:</strong>Western pacific tropical marine reefs around Fiji</p>
+            <p><strong>Diet:</strong> Omnivore; algae and zooplankton</p>
+            <p><strong>Size:</strong> 7-9 inches, with females being larger than male</p>
+            <p><strong>Lifespan:</strong> 5-7 years</p>
+            <p><strong>Reproduction:</strong> External fertilization with eggs becoming part of the plankton</p>
+            <p><strong>Cool Facts:</strong> Spines are venomous and used for defense</p>
+            
+            <!-- Optional back button -->
+            <a id="backBtn" href="index.html">&#8592; Back</a>
+        </div>
+
+    </div>
+</body>
 </html>
