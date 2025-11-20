@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Indigo Dottyback</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-        <script src="fishTank.js"></script>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Indigo Dottyback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail">
+    <!-- Page container -->
+    <div class="fish-detail-container">
 
-    <body class="detail">
-        <div class="container">
-            <img id="detailBanner" src="images/indigoDottybackFishBanner.jpg">
-                <a href="index.html" id="backBtn"><img src="images/chevronBackSymbol.png"></a>
-                <h1 id="detailTitle">Indigo Dottyback Fish</h1>
-                
-                </div>
-        <p class="description">
-            Common Name: Indigo Dottyback<br>
-            Scientific Name: Pseudochromis fridamani x sankeyi<br>
-            Adult Size: 3 inches<br>
-            Habitat: Indian Ocean and Red Sea<br>
-            Behavior: Semi-Agressive<br>
-            Lifespan: 3-5 Years<br>
-            Diet: Carnivore<br>
-            Reproduction: External fertilization with the male guarding the eggs<br>
-            Cool Facts: Hybrid of Orchid Dottyback and Striped Dottyback<br>
-            Other names: None    
-        </p>
-    </body>
+        <!-- Left side: fish image -->
+        <div class="fish-image-container">
+            <img src="images/indigoDottybackFishBanner.jpg" alt="Indigo Dottyback" class="fish-image">
+        </div>
+
+        <!-- Right side: information and 3D model -->
+        <div class="fish-info">
+            <h1>Indigo Dottyback</h1>
+            <p><strong>Scientific Name:</strong> Pseudochromis fridamani x sankeyi</p>
+            <p><strong>Common Name:</strong> Bicolor Foxface</p>
+            <p><strong>Other Names:</strong> None</p>
+            <p><strong>Behavior:</strong> Semi-Agressive</p>
+            <p><strong>Habitat:</strong>Indian Ocean and Red Sea</p>
+            <p><strong>Diet:</strong> Carnivore</p>
+            <p><strong>Size:</strong> 3 inches</p>
+            <p><strong>Lifespan:</strong> 3-5 years</p>
+            <p><strong>Reproduction:</strong> External fertilization with the male guarding the eggs</p>
+            <p><strong>Cool Facts:</strong> Hybrid of Orchid Dottyback and Striped Dottyback</p>
+
+            <!-- Optional back button -->
+            <a id="backBtn" href="index.html">&#8592; Back</a>
+        </div>
+
+    </div>
+</body>
 </html>
+
