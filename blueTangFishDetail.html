@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Blue Tang Fish</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blue Tang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="detail">
+    <!-- Page container -->
+    <div class="fish-detail-container">
 
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-        <script src="fishTank.js"></script>
-    </head>
+        <!-- Left side: fish image -->
+        <div class="fish-image-container">
+            <img src="images/blueTangFishBanner.jpg" alt="Blue Tang" class="fish-image">
+        </div>
 
-    <body class="detail">
-        <div class="container">
-            <img id="detailBanner" src="images/blueTangFishBanner.jpg">
-                <a href="index.html" id="backBtn"><img src="images/chevronBackSymbol.png"></a>
-                <h1 id="detailTitle">Blue Hippo Tang Fish</h1>
-                
-                </div>
-        <p class="description">
-            Common Name: Blue Hippo Tang<br>
-            Scientific Name: Paracanthurus hepatus<br>
-            Adult Size: 12 inches<br>
-            Habitat: Indo-Pacific<br>
-            Behavior: Semi-aggressive<br>
-            Lifespan: 5 years<br>
-            Diet: Herbivore<br>
-            Reproduction: External fertilization and scatter eggs<br>
-            Cool Facts: Dory from finding Nemo!<br>
-            Other Names: Regal Tang<br>
-        </p>
-    </body>
+        <!-- Right side: information and 3D model -->
+        <div class="fish-info">
+            <h1>Blue Tang</h1>
+            <p><strong>Scientific Name:</strong> Paracanthurus hepatus</p>
+            <p><strong>Common Name:</strong> Blue Hippo Tang</p>
+            <p><strong>Other Names:</strong> Blue Tang, Blue Surgeonfish, Blue Doctorfish</p>
+            <p><strong>Behavior:</strong> Semi-Aggresive</p>
+            <p><strong>Habitat:</strong>Indo-Pacific</p>
+            <p><strong>Diet:</strong> Herbivore</p>
+            <p><strong>Size:</strong> 12 inches</p>
+            <p><strong>Lifespan:</strong> 5 years</p>
+            <p><strong>Reproduction:</strong> External fertilization and scatter eggs</p>
+            <p><strong>Cool Facts:</strong> Dory from finding Nemo!</p>
+            <!-- Optional back button -->
+            <a id="backBtn" href="index.html">&#8592; Back</a>
+
+        
+        </div>
+
+    </div>
+</body>
 </html>
