@@ -32,7 +32,7 @@ background: linear-gradient(-45deg, #0095ff, #6bbfff, #99f3ff, #7dffe5, #8fffe3)
   transition: transform 3s ease-in-out;
 }
 	
-}
+
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -94,7 +94,6 @@ font-family: "Marker Felt", fantasy;  font-weight: 900;
 #indigoDottybackFish{
   right: 120px;
   bottom: 200px;
-  //top: 120px; Layton Changed
 }
 #astraeaTurboSnail{
   bottom: 5px;
