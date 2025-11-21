@@ -13,6 +13,9 @@ const fishFacing = {
 };
 
 function swimFish(fish) {
+  // Make urchin stationary
+  if (fish.id === 'blackLongSpinedUrchin') return;
+
   const aquarium = document.getElementById('aquarium');
   const maxX = aquarium.clientWidth - fish.clientWidth;
   const maxY = aquarium.clientHeight - fish.clientHeight;
@@ -20,8 +23,8 @@ function swimFish(fish) {
   const startX = fish.offsetLeft;
   const startY = fish.offsetTop;
 
-  const isSnail = fish.id === 'astraeaTurboSnail';
- const snailY = aquarium.clientHeight - fish.clientHeight - 10; // 10px from bottom
+  const isSnail = fish.id === 'astraeaTurboSnail' || fish.id === 'serpentSeaStar';
+  const snailY = aquarium.clientHeight - fish.clientHeight - 10;
 
   const targetX = Math.random() * maxX;
   const targetY = isSnail ? snailY : Math.random() * maxY;
@@ -44,7 +47,6 @@ function swimFish(fish) {
     fish.style.left = `${currentX}px`;
     fish.style.top = `${currentY}px`;
 
-    // flip fish left/right (skip for snail) using fishFacing mapping
     if (!isSnail) {
       const flip = (targetX < startX ? -1 : 1) * fishFacing[fish.id];
       fish.style.transform = `scaleX(${flip})`;
@@ -59,6 +61,7 @@ function swimFish(fish) {
 
   requestAnimationFrame(animate);
 }
+
 
 // start all fish after DOM loads
 document.addEventListener("DOMContentLoaded", () => {
