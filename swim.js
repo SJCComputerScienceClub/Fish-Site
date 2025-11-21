@@ -6,7 +6,10 @@ const fishFacing = {
   coralBeautyFish: 1,
   orchidDottybackFish: 1,
   astraeaTurboSnail: 1,
-  indigoDottybackFish: 1
+  indigoDottybackFish: 1,
+  serpentSeaStar: 1,
+  blackLongSpinedUrchin: 1,
+  
 };
 
 function swimFish(fish) {
