@@ -102,14 +102,17 @@ font-family: "Marker Felt", fantasy;  font-weight: 900;
 #seaCucumber{
 	bottom: 5px;
 	right: 50px;
+	z-index: 10;
 }
 #serpentSeaStar{
 	bottom: 5px;
 	right: 75px;
+	z-index: 10;
 }
 #blueCaribbeanFish{
   right: 170px;
   bottom: 250px;
+	
 }
 #disparAnthias{
  right: 160px;
@@ -117,7 +120,7 @@ font-family: "Marker Felt", fantasy;  font-weight: 900;
 }
 #blackLongSpinedUrchin{
 	bottom: 5px;
-	right: 60px;
+	right: 200px;
 }
 
 body.detail #detailBanner {
