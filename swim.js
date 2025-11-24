@@ -9,6 +9,7 @@ const fishFacing = {
   indigoDottybackFish: 1,
   serpentSeaStar: 1,
   blackLongSpinedUrchin: 1,
+  disparAnthias: 1,
   
 };
 
