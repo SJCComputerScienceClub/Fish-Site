@@ -12,6 +12,7 @@ const fishFacing = {
   disparAnthias: 1,
   yellowtailDamsel: -1,
   blueCaribbeanFish: 1,
+  seaCucumber: 1,
 };
 
 function swimFish(fish) {
@@ -25,8 +26,8 @@ function swimFish(fish) {
   const startX = fish.offsetLeft;
   const startY = fish.offsetTop;
 
-  const isSnail = fish.id === 'astraeaTurboSnail' || fish.id === 'serpentSeaStar';
-  const snailY = aquarium.clientHeight - fish.clientHeight - 10;
+  const isSnail = fish.id === 'astraeaTurboSnail' || fish.id === 'serpentSeaStar' || fish.id === 'seaCucumber';;
+  const snailY = aquarium.clientHeight - fish.clientHeight - 20;
 
   const targetX = Math.random() * maxX;
   const targetY = isSnail ? snailY : Math.random() * maxY;
