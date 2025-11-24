@@ -10,6 +10,7 @@ const fishFacing = {
   serpentSeaStar: 1,
   blackLongSpinedUrchin: 1,
   disparAnthias: 1,
+  yellowtailDamsel: 1,
   
 };
 
