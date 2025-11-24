@@ -120,7 +120,7 @@ font-family: "Marker Felt", fantasy;  font-weight: 900;
  bottom: 225px;
 }
 #blackLongSpinedUrchin{
-	bottom: 5px;
+	bottom: 0px;
 	right: 400px;
 	z-index: 10;
 	
