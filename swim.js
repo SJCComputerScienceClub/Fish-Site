@@ -11,7 +11,7 @@ const fishFacing = {
   blackLongSpinedUrchin: 1,
   disparAnthias: 1,
   yellowtailDamsel: -1,
-  
+  blueCaribbeanFish: 1,
 };
 
 function swimFish(fish) {
