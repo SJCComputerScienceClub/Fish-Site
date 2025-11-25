@@ -15,19 +15,19 @@ const fishFacing = {
   seaCucumber: 1,
 };
 const speedMultiplier = {
-  clownFish: 100,
-  blueTangFish: 5,
-  yellowTangFish: 4,
-  bicolorFoxfaceFish: 5,
-  coralBeautyFish: 4,
-  orchidDottybackFish: 4,
-  astraeaTurboSnail: 1,
-  indigoDottybackFish: 4,
-  serpentSeaStar: 1,
-  disparAnthias: 5,
-  yellowtailDamsel: 4,
-  blueCaribbeanFish: 4,
-  seaCucumber: 1,
+  clownFish: 1,
+  blueTangFish: 1,
+  yellowTangFish: 1,
+  bicolorFoxfaceFish: 1,
+  coralBeautyFish: 1,
+  orchidDottybackFish: 1,
+  astraeaTurboSnail: .25,
+  indigoDottybackFish: 1,
+  serpentSeaStar: .25,
+  disparAnthias: 1,
+  yellowtailDamsel: 1,
+  blueCaribbeanFish: 1,
+  seaCucumber: .25,
 };
 function swimFish(fish) {
   // Make urchin stationary
