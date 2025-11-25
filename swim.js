@@ -14,7 +14,21 @@ const fishFacing = {
   blueCaribbeanFish: -1,
   seaCucumber: 1,
 };
-
+const speedMultiplier = {
+  clownFish: 5,
+  blueTangFish: 5,
+  yellowTangFish: 4,
+  bicolorFoxfaceFish: 5,
+  coralBeautyFish: 4,
+  orchidDottybackFish: 4,
+  astraeaTurboSnail: 1,
+  indigoDottybackFish: 4,
+  serpentSeaStar: 1,
+  disparAnthias: 5,
+  yellowtailDamsel: 4,
+  blueCaribbeanFish: 4,
+  seaCucumber: 1,
+};
 function swimFish(fish) {
   // Make urchin stationary
   if (fish.id === 'blackLongSpinedUrchin') return;
@@ -32,9 +46,14 @@ function swimFish(fish) {
   const targetX = Math.random() * maxX;
   const targetY = isSnail ? snailY : Math.random() * maxY;
 
-  const duration = 6000 + Math.random() * 4000;
-  const startTime = performance.now();
+  //const duration = 6000 + Math.random() * 4000;
+  //const startTime = performance.now();
 
+  const baseDuration = 6000 + Math.random() * 4000;
+  const speed = speedMultiplier[fish.id] || 1;
+
+  const duration = baseDuration * speed;
+  
   function easeInOutQuad(t) {
     return t < 0.5 ? 2*t*t : -1 + (4 - 2*t)*t;
   }
