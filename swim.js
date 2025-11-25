@@ -21,13 +21,13 @@ const speedMultiplier = {
   bicolorFoxfaceFish: 1,
   coralBeautyFish: 1,
   orchidDottybackFish: 1,
-  astraeaTurboSnail: .25,
+  astraeaTurboSnail: 1.25,
   indigoDottybackFish: 1,
-  serpentSeaStar: .25,
+  serpentSeaStar: 1.25,
   disparAnthias: 1,
   yellowtailDamsel: 1,
   blueCaribbeanFish: 1,
-  seaCucumber: .25,
+  seaCucumber: 1.25,
 };
 function swimFish(fish) {
   if (fish.id === 'blackLongSpinedUrchin') return;
