@@ -30,6 +30,7 @@ background: linear-gradient(-45deg, #0095ff, #6bbfff, #99f3ff, #7dffe5, #8fffe3)
   width: 100px;
   height: auto;
   transition: transform 3s ease-in-out;
+  z-index: 20;
 }
 	
 
