@@ -46,8 +46,8 @@ function swimFish(fish) {
   const targetX = Math.random() * maxX;
   const targetY = isSnail ? snailY : Math.random() * maxY;
 
-  //const duration = 6000 + Math.random() * 4000;
-  //const startTime = performance.now();
+  const duration = 6000 + Math.random() * 4000;
+  const startTime = performance.now();
 
   const baseDuration = 6000 + Math.random() * 4000;
   const speed = speedMultiplier[fish.id] || 1;
