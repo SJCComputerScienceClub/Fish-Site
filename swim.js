@@ -30,7 +30,6 @@ const speedMultiplier = {
   seaCucumber: .25,
 };
 function swimFish(fish) {
-  // Make urchin stationary
   if (fish.id === 'blackLongSpinedUrchin') return;
 
   const aquarium = document.getElementById('aquarium');
@@ -40,22 +39,20 @@ function swimFish(fish) {
   const startX = fish.offsetLeft;
   const startY = fish.offsetTop;
 
-  const isSnail = fish.id === 'astraeaTurboSnail' || fish.id === 'serpentSeaStar' || fish.id === 'seaCucumber';;
+  const isSnail = fish.id === 'astraeaTurboSnail' || fish.id === 'serpentSeaStar' || fish.id === 'seaCucumber';
   const snailY = aquarium.clientHeight - fish.clientHeight - 30;
 
   const targetX = Math.random() * maxX;
   const targetY = isSnail ? snailY : Math.random() * maxY;
 
-  const duration = 6000 + Math.random() * 4000;
-  const startTime = performance.now();
-
   const baseDuration = 6000 + Math.random() * 4000;
   const speed = speedMultiplier[fish.id] || 1;
-
   const duration = baseDuration * speed;
-  
+
+  const startTime = performance.now();
+
   function easeInOutQuad(t) {
-    return t < 0.5 ? 2*t*t : -1 + (4 - 2*t)*t;
+    return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
   }
 
   function animate(time) {
@@ -83,6 +80,7 @@ function swimFish(fish) {
 
   requestAnimationFrame(animate);
 }
+
 
 
 // start all fish after DOM loads
