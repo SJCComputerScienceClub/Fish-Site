@@ -19,7 +19,7 @@ background: linear-gradient(-45deg, #0095ff, #6bbfff, #99f3ff, #7dffe5, #8fffe3)
 #aquarium {
   position: relative;
   width: 100%;
-  height: 600px%;  /* test sizing */
+  height: 600px;  /* test sizing */
   overflow: hidden;
   margin-top: 200px;
  
