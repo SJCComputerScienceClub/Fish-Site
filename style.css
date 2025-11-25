@@ -47,12 +47,6 @@ background: linear-gradient(-45deg, #0095ff, #6bbfff, #99f3ff, #7dffe5, #8fffe3)
 	}
 }
 
-img.icon{
-  position: absolute;
-  max-width: 200px;
-  object-fit: contain;
-  
-}
 .mainTitle{
   text-align: center;
   color: white;
