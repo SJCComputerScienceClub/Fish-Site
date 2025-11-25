@@ -15,7 +15,7 @@ const fishFacing = {
   seaCucumber: 1,
 };
 const speedMultiplier = {
-  clownFish: 5,
+  clownFish: 100,
   blueTangFish: 5,
   yellowTangFish: 4,
   bicolorFoxfaceFish: 5,
