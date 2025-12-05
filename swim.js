@@ -119,6 +119,16 @@ function startSnowfall(duration = 3000) {
     }, duration);
 }
 
+const christmasMessages = [
+    "Ho, Ho, Ho... Merry Christmas!",
+    "Season’s Greetings from the Aquarium!",
+    "Happy Holidays to you and yours!",
+    "Wishing you peace, joy, and Christmas cheer!",
+    "Have a holly jolly Christmas!",
+    "May your days be merry and bright!"
+];
+
+let messageIndex = 0;
 
 document.getElementById("santaFish").addEventListener("click", function () {
     const msg = document.getElementById("christmasMessage");
