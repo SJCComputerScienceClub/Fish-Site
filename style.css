@@ -234,6 +234,7 @@ p{
     justify-content: center;
     align-items: center;  /* center image vertically */
     overflow: hidden;
+	background: linear-gradient(to bottom, #0095ff, #99f3ff);
 }
 .fish-image {
     width: auto;
