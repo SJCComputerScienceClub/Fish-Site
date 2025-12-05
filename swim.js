@@ -140,22 +140,25 @@ document.getElementById("santaFish").addEventListener("click", function () {
     // Set the message from the rotating list
     msg.textContent = christmasMessages[messageIndex];
 
-    // Move to the next message (loop back to 0 when done)
+    // Move to the next message
     messageIndex = (messageIndex + 1) % christmasMessages.length;
 
-    // Show message
+    // Show message and add twinkle
     msg.style.display = "block";
+    msg.classList.add("twinkle");
 
-    // Optional: start snow if you're using snow
+    // Optional: start snow if using snow
     if (typeof startSnowfall === "function") {
         startSnowfall();
     }
 
-    // Hide after 3 seconds
+    // Hide after 3 seconds and remove twinkle
     setTimeout(() => {
         msg.style.display = "none";
+        msg.classList.remove("twinkle");
     }, 3000);
 });
+
 
 
 
