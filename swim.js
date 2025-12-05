@@ -29,6 +29,7 @@ const speedMultiplier = {
   yellowtailDamsel: 1,
   blueCaribbeanFish: 1,
   seaCucumber: 2,
+  santaFish: 1,
 };
 function swimFish(fish) {
   if (fish.id === 'blackLongSpinedUrchin') return;
