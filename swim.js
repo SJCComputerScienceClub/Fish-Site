@@ -122,7 +122,7 @@ function startSnowfall(duration = 3000) {
 const christmasMessages = [
     "Ho, Ho, Ho... Merry Christmas!",
     "Season’s Greetings from the Aquarium!",
-    "Glory to God in the highest, peace on earth!"
+    "Glory to God in the highest, peace on earth!",
     "Believe in the magic of Christmas!",
     "Christ's love is the heart of Christmas",
     "Happy Holidays to you and yours!",
