@@ -93,12 +93,42 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+function startSnowfall(duration = 3000) {
+    const container = document.getElementById("snowContainer");
+
+    // Create snowflakes
+    for (let i = 0; i < 40; i++) {
+        let snowflake = document.createElement("div");
+        snowflake.classList.add("snowflake");
+        snowflake.innerHTML = "❄";
+
+        // Random horizontal position & animation duration
+        snowflake.style.left = Math.random() * 100 + "vw";
+        snowflake.style.animationDuration = 2 + Math.random() * 3 + "s";
+        snowflake.style.fontSize = (12 + Math.random() * 24) + "px";
+
+        container.appendChild(snowflake);
+
+        // Remove after falling
+        setTimeout(() => snowflake.remove(), 5000);
+    }
+
+    // Stop snowfall entirely after duration
+    setTimeout(() => {
+        container.innerHTML = "";
+    }, duration);
+}
+
+
 document.getElementById("santaFish").addEventListener("click", function () {
     const msg = document.getElementById("christmasMessage");
+
     msg.style.display = "block";
+    startSnowfall(); // ❄️ start snow
 
     setTimeout(() => {
         msg.style.display = "none";
-    }, 3000); // message stays for 3 seconds
+    }, 3000);
 });
+
 
