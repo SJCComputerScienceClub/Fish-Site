@@ -229,17 +229,17 @@ p{
 
 /* Left side: fish image */
 .fish-image-container {
-    flex: 2;                   /* 2/3 of the width */
+    flex: 2;
     display: flex;
-    justify-content: center;    /* horizontal centering */
-    align-items: flex-start;    /* align to top */
+    justify-content: center;
+    align-items: center;  /* center image vertically */
     overflow: hidden;
 }
-
 .fish-image {
-    width: 100%;
-    height: 100%;              /* stretch image to container height */
-    object-fit: contain;         /* fill container without distortion */
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 /* Right side: info */
