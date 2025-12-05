@@ -129,7 +129,7 @@ const christmasMessages = [
     "Wishing you peace, joy, and Christmas cheer!",
     "Have a holly jolly Christmas!",
     "May your Christmas be filled with the peace of Christ's love",
-    "May your days be merry and bright!"
+    "May your days be merry and bright!",
 ];
 
 let messageIndex = 0;
