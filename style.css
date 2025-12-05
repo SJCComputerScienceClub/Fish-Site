@@ -269,6 +269,17 @@ p{
 }
 
 /* Back button */
+
+#backBtn{ 
+		position: absolute; 
+		 top: 8px; 
+		 left: 8px; 
+		 text-decoration: none; 
+		 color: red; 
+		 font-weight: 900; 
+		 font-size: 50px; 
+		 font-family: Arial, Helvetica, sans-serif; 
+}
 #backBtn {
     display: inline-block;
     margin-top: 20px;
@@ -277,6 +288,8 @@ p{
     font-weight: bold;
     font-size: 24px;
 }
+
+
 
 /* Responsive: stack columns on mobile */
 @media (max-width: 768px) {
