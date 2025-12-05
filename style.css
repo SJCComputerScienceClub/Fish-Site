@@ -34,6 +34,18 @@
   opacity: 0.9;
   animation: fall linear;
 }
+@keyframes twinkle {
+  0%, 100% { color: #ff0000; }   /* Red */
+  20% { color: #00ff00; }        /* Green */
+  40% { color: #ffff00; }        /* Yellow */
+  60% { color: #ff00ff; }        /* Magenta */
+  80% { color: #00ffff; }        /* Cyan */
+}
+
+.twinkle {
+  animation: twinkle 1s infinite;
+}
+
 
 @keyframes fall {
   to {
