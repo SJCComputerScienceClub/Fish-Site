@@ -92,3 +92,13 @@ document.addEventListener("DOMContentLoaded", () => {
     swimFish(f);
   });
 });
+
+document.getElementById("santaFish").addEventListener("click", function () {
+    const msg = document.getElementById("christmasMessage");
+    msg.style.display = "block";
+
+    setTimeout(() => {
+        msg.style.display = "none";
+    }, 3000); // message stays for 3 seconds
+});
+
