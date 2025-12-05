@@ -147,7 +147,7 @@ document.getElementById("santaFish").addEventListener("click", function () {
     msg.style.display = "block";
     msg.classList.add("twinkle");
 
-    // Optional: start snow if using snow
+    // start snow if using snow
     if (typeof startSnowfall === "function") {
         startSnowfall();
     }
