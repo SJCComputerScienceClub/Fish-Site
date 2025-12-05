@@ -13,6 +13,7 @@ const fishFacing = {
   yellowtailDamsel: -1,
   blueCaribbeanFish: -1,
   seaCucumber: 1,
+  santaFish: -1;
 };
 const speedMultiplier = {
   clownFish: 1,
