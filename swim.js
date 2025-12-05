@@ -122,9 +122,13 @@ function startSnowfall(duration = 3000) {
 const christmasMessages = [
     "Ho, Ho, Ho... Merry Christmas!",
     "Season’s Greetings from the Aquarium!",
+    "Glory to God in the highest, peace on earth!"
+    "Believe in the magic of Christmas!",
+    "Christ's love is the heart of Christmas",
     "Happy Holidays to you and yours!",
     "Wishing you peace, joy, and Christmas cheer!",
     "Have a holly jolly Christmas!",
+    "May your Christmas be filled with the peace of Christ's love",
     "May your days be merry and bright!"
 ];
 
@@ -133,12 +137,25 @@ let messageIndex = 0;
 document.getElementById("santaFish").addEventListener("click", function () {
     const msg = document.getElementById("christmasMessage");
 
-    msg.style.display = "block";
-    startSnowfall(); // ❄️ start snow
+    // Set the message from the rotating list
+    msg.textContent = christmasMessages[messageIndex];
 
+    // Move to the next message (loop back to 0 when done)
+    messageIndex = (messageIndex + 1) % christmasMessages.length;
+
+    // Show message
+    msg.style.display = "block";
+
+    // Optional: start snow if you're using snow
+    if (typeof startSnowfall === "function") {
+        startSnowfall();
+    }
+
+    // Hide after 3 seconds
     setTimeout(() => {
         msg.style.display = "none";
     }, 3000);
 });
+
 
 
