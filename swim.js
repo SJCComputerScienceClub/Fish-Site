@@ -1,3 +1,6 @@
+let santaClickAllowed = true;
+
+
 const fishFacing = {
   clownFish: 1,
   blueTangFish: 1,
@@ -135,6 +138,9 @@ const christmasMessages = [
 let messageIndex = 0;
 
 document.getElementById("santaFish").addEventListener("click", function () {
+    if (!santaClickAllowed) return; // ignore clicks during cooldown
+    santaClickAllowed = false;      // block further clicks
+
     const msg = document.getElementById("christmasMessage");
 
     // Set the message from the rotating list
@@ -147,7 +153,7 @@ document.getElementById("santaFish").addEventListener("click", function () {
     msg.style.display = "block";
     msg.classList.add("twinkle");
 
-    // start snow if using snow
+    // Start snow if using snow
     if (typeof startSnowfall === "function") {
         startSnowfall();
     }
@@ -156,6 +162,7 @@ document.getElementById("santaFish").addEventListener("click", function () {
     setTimeout(() => {
         msg.style.display = "none";
         msg.classList.remove("twinkle");
+        santaClickAllowed = true;  // re-enable clicking
     }, 3000);
 });
 
