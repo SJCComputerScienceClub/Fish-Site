@@ -239,7 +239,7 @@ p{
 .fish-image {
     width: 100%;
     height: 100%;              /* stretch image to container height */
-    object-fit: cover;         /* fill container without distortion */
+    object-fit: contain;         /* fill container without distortion */
 }
 
 /* Right side: info */
