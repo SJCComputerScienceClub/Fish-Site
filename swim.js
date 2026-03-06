@@ -166,6 +166,57 @@ document.getElementById("santaFish").addEventListener("click", function () {
     }, 3000);
 });
 
+const eggs = document.querySelectorAll(".easter-egg");
+const messageBox = document.getElementById("easter-message");
+
+let active = false;
+let messageIndex = 0;
+
+const messages = [
+"Happy Easter.",
+"May the miracle of Easter fill your heart with love, joy, and peace.",
+"We are the Easter people and hallelujah is our song. — Pope John Paul II",
+"He died so that we can live. Wishing you a blessed Easter.",
+"Our old history ends with the cross; our new history begins with our resurrection."
+];
+
+const colors = [
+"#ff69b4",
+"#ffcc00",
+"#66ff99",
+"#66ccff",
+"#ff9966"
+];
+
+eggs.forEach(egg => {
+
+    egg.addEventListener("click", ()=>{
+
+        if(active) return;
+
+        active = true;
+
+        egg.classList.add("jump");
+
+        messageBox.textContent = messages[messageIndex];
+        messageBox.style.color = colors[messageIndex % colors.length];
+        messageBox.classList.add("show-message");
+
+        messageIndex++;
+        if(messageIndex >= messages.length){
+            messageIndex = 0;
+        }
+
+        setTimeout(()=>{
+            egg.classList.remove("jump");
+            active = false;
+        },1200);
+
+    });
+
+});
+
+
 
 
 
