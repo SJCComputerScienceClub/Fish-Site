@@ -1,3 +1,59 @@
+#easter-container{
+    position:absolute;
+    bottom:10px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    pointer-events:auto;
+}
+
+.easter-egg{
+    width:70px;
+    cursor:pointer;
+    animation:shake 2s infinite ease-in-out;
+    transition:transform .3s;
+}
+
+.easter-egg:hover{
+    transform:scale(1.1);
+}
+
+/* subtle shake */
+@keyframes shake{
+    0%{ transform:rotate(-3deg); }
+    50%{ transform:rotate(3deg); }
+    100%{ transform:rotate(-3deg); }
+}
+
+/* jump animation */
+.jump{
+    animation:eggJump 1.2s ease forwards;
+}
+
+@keyframes eggJump{
+    0%{ transform:translateY(0); }
+    30%{ transform:translateY(-120px); }
+    60%{ transform:translateY(-80px); }
+    100%{ transform:translateY(0); }
+}
+
+#easter-message{
+    position:absolute;
+    bottom:120px;
+    width:100%;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    font-family:sans-serif;
+    opacity:0;
+    transition:opacity .5s;
+}
+
+.show-message{
+    opacity:1;
+}
+
 #christmasMessage {
   position: fixed;
   top: 50%;
