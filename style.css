@@ -51,6 +51,7 @@
     font-family:sans-serif;
     opacity:0;
     transition:opacity .5s;
+	color: pink
     z-index:100;
 }
 
