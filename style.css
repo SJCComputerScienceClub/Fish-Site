@@ -41,16 +41,17 @@
 
 #easter-message{
     position:absolute;
-	color: black;
-    bottom:120px;
-    width:100%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:80%;
     text-align:center;
-    font-size:28px;
+    font-size:32px;
     font-weight:bold;
     font-family:sans-serif;
     opacity:0;
     transition:opacity .5s;
-    z-index:100;   /* ADD THIS */
+    z-index:100;
 }
 
 .show-message{
