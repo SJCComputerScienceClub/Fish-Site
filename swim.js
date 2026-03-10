@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let eggMessageIndex = 0;
 
   const messages = [
-    "Happy Easter.",
+    "🐇.•*¨`*•.¸ 🐇.•*¨`*•. 🐇¸ Happy Easter! 🐇.•*¨`*•.¸ 🐇.•*¨`*•. 🐇¸",
     "May the miracle of Easter fill your heart with love, joy, and peace.",
     "We are the Easter people and hallelujah is our song. — Pope John Paul II",
     "He died so that we can live. Wishing you a blessed Easter.",
