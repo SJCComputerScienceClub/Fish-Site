@@ -134,9 +134,9 @@ const christmasMessages = [
     "May your Christmas be filled with the peace of Christ's love",
     "May your days be merry and bright!",
 ];
-
+*/
 let messageIndex = 0;
-
+/*
 document.getElementById("santaFish").addEventListener("click", function () {
     if (!santaClickAllowed) return; // ignore clicks during cooldown
     santaClickAllowed = false;      // block further clicks
