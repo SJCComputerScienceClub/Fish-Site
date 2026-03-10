@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         egg.classList.remove("jump");
         eggActive = false;
-      }, 3000);
+      }, 4000);
     });
   });
 
