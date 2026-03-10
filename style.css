@@ -3,9 +3,10 @@
     bottom:10px;
     width:100%;
     display:flex;
-    justify-content:center;
-    gap:40px;
+    justify-content:space-around;
+    align-items:flex-end;
     pointer-events:auto;
+    z-index:5;
 }
 
 .easter-egg{
