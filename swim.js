@@ -229,8 +229,7 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(()=>{
           messageBox.classList.remove("show-message");
       },4000);
-  });
-});
+ 
 
           eggMessageIndex = (eggMessageIndex + 1) % messages.length;
 
@@ -240,7 +239,8 @@ document.addEventListener("DOMContentLoaded", () => {
           },3000);
 
   
-
+ });
+});
 });
 
 
