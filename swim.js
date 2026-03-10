@@ -198,10 +198,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const messages = [
     "🐇.•*¨`*•.¸ 🐇.•*¨`*•. 🐇¸ Happy Easter! 🐇.•*¨`*•.¸ 🐇.•*¨`*•. 🐇¸",
-    "May the miracle of Easter fill your heart with love, joy, and peace.",
-    "We are the Easter people and hallelujah is our song. — Pope John Paul II",
-    "He died so that we can live. Wishing you a blessed Easter.",
-    "Our old history ends with the cross; our new history begins with our resurrection."
+    "🌷 May the miracle of Easter fill your heart with love, joy, and peace.🌷",
+    "🙏 We are the Easter people and hallelujah is our song. — Pope John Paul II" 🙏,
+    "✝️ He died so that we can live. Wishing you a blessed Easter." ✝️,
+    "🙌 Our old history ends with the cross; our new history begins with our resurrection.🙌 "
   ];
 
   const colors = ["#ff69b4", "#ffcc00", "#66ff99", "#66ccff", "#ff9966"];
