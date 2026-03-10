@@ -166,53 +166,61 @@ document.getElementById("santaFish").addEventListener("click", function () {
     }, 3000);
 });
 
-const eggs = document.querySelectorAll(".easter-egg");
-const messageBox = document.getElementById("easter-message");
+document.addEventListener("DOMContentLoaded", () => {
 
-let active = false;
-let messageIndex = 0;
+  // start fish swimming
+  document.querySelectorAll('.icon').forEach(f => {
+    f.style.position = 'absolute';
+    swimFish(f);
+  });
 
-const messages = [
-"Happy Easter.",
-"May the miracle of Easter fill your heart with love, joy, and peace.",
-"We are the Easter people and hallelujah is our song. — Pope John Paul II",
-"He died so that we can live. Wishing you a blessed Easter.",
-"Our old history ends with the cross; our new history begins with our resurrection."
-];
+  // Easter eggs
+  const eggs = document.querySelectorAll(".easter-egg");
+  const messageBox = document.getElementById("easter-message");
 
-const colors = [
-"#ff69b4",
-"#ffcc00",
-"#66ff99",
-"#66ccff",
-"#ff9966"
-];
+  let eggActive = false;
+  let eggMessageIndex = 0;
 
-eggs.forEach(egg => {
+  const messages = [
+  "Happy Easter.",
+  "May the miracle of Easter fill your heart with love, joy, and peace.",
+  "We are the Easter people and hallelujah is our song. — Pope John Paul II",
+  "He died so that we can live. Wishing you a blessed Easter.",
+  "Our old history ends with the cross; our new history begins with our resurrection."
+  ];
 
-    egg.addEventListener("click", ()=>{
+  const colors = [
+  "#ff69b4",
+  "#ffcc00",
+  "#66ff99",
+  "#66ccff",
+  "#ff9966"
+  ];
 
-        if(active) return;
+  eggs.forEach(egg => {
 
-        active = true;
+      egg.addEventListener("click", ()=>{
 
-        egg.classList.add("jump");
+          if(eggActive) return;
+          eggActive = true;
 
-        messageBox.textContent = messages[messageIndex];
-        messageBox.style.color = colors[messageIndex % colors.length];
-        messageBox.classList.add("show-message");
+          egg.classList.add("jump");
 
-        messageIndex++;
-        if(messageIndex >= messages.length){
-            messageIndex = 0;
-        }
+          messageBox.textContent = messages[eggMessageIndex];
+          messageBox.style.color = colors[eggMessageIndex % colors.length];
+          messageBox.classList.add("show-message");
 
-        setTimeout(()=>{
-            egg.classList.remove("jump");
-            active = false;
-        },1200);
+          eggMessageIndex = (eggMessageIndex + 1) % messages.length;
 
-    });
+          setTimeout(()=>{
+              egg.classList.remove("jump");
+              eggActive = false;
+          },1200);
+
+      });
+
+  });
+
 });
 
 
