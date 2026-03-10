@@ -39,24 +39,26 @@
     100%{ transform:translateY(0); }
 }
 
-#easter-message{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:80%;
-    text-align:center;
-    font-size:32px;
-    font-weight:bold;
-    font-family:sans-serif;
-    opacity:0;
-    transition:opacity .5s;
-	color: pink;
-    z-index:100;
+#easter-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: sans-serif;
+    opacity: 0;
+    transition: opacity 0.5s;
+    color: white;              /* make it white for contrast */
+    background: rgba(0,0,0,0.6); /* semi-transparent dark background */
+    padding: 20px;
+    border-radius: 15px;
+    z-index: 1000;             /* higher than icons */
 }
-
-.show-message{
-    opacity:1;
+.show-message {
+    opacity: 1;
 }
 .sparkle{
   position:absolute;
