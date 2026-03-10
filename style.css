@@ -41,6 +41,7 @@
 
 #easter-message{
     position:absolute;
+	color: black;
     bottom:120px;
     width:100%;
     text-align:center;
