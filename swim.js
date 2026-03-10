@@ -166,7 +166,7 @@ document.getElementById("santaFish").addEventListener("click", function () {
     }, 3000);
 });
 
-/* const eggs = document.querySelectorAll(".easter-egg");
+const eggs = document.querySelectorAll(".easter-egg");
 const messageBox = document.getElementById("easter-message");
 
 let active = false;
@@ -214,8 +214,7 @@ eggs.forEach(egg => {
 
     });
 
-});
-*/
+
 
 
 
