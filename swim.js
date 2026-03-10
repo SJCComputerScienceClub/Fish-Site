@@ -227,6 +227,9 @@ document.addEventListener("DOMContentLoaded", () => {
           messageBox.textContent = messages[eggMessageIndex];
           messageBox.style.color = colors[eggMessageIndex % colors.length];
           messageBox.classList.add("show-message");
+          setTimeout(()=>{
+              messageBox.classList.remove("show-message");
+          },4000);
 
           eggMessageIndex = (eggMessageIndex + 1) % messages.length;
 
