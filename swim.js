@@ -86,16 +86,6 @@ function swimFish(fish) {
   requestAnimationFrame(animate);
 }
 
-
-
-// start all fish after DOM loads
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll('.icon').forEach(f => {
-    f.style.position = 'absolute';  // ensure positioning works
-    swimFish(f);
-  });
-});
-
 /* function startSnowfall(duration = 3000) {
     const container = document.getElementById("snowContainer");
 
@@ -168,7 +158,7 @@ document.getElementById("santaFish").addEventListener("click", function () {
 */
 document.addEventListener("DOMContentLoaded", () => {
 
-  // start fish swimming
+  // Start fish swimming
   document.querySelectorAll('.icon').forEach(f => {
     f.style.position = 'absolute';
     swimFish(f);
@@ -176,71 +166,87 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Easter eggs
   const eggs = document.querySelectorAll(".easter-egg");
-  const messageBox = document.getElementById("easter-message");
+
+  // Create a dedicated message box if it doesn't exist
+  let messageBox = document.getElementById("easter-message");
+  if (!messageBox) {
+    messageBox = document.createElement("div");
+    messageBox.id = "easter-message";
+    document.body.appendChild(messageBox);
+  }
+
+  // CSS to ensure message is visible above everything
+  Object.assign(messageBox.style, {
+    position: "fixed",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    padding: "20px 40px",
+    background: "rgba(0,0,0,0.7)",
+    color: "#fff",
+    fontSize: "32px",
+    fontWeight: "bold",
+    textAlign: "center",
+    borderRadius: "15px",
+    zIndex: "9999",
+    opacity: 0,
+    transition: "opacity 0.5s ease"
+  });
 
   let eggActive = false;
   let eggMessageIndex = 0;
 
   const messages = [
-  "Happy Easter.",
-  "May the miracle of Easter fill your heart with love, joy, and peace.",
-  "We are the Easter people and hallelujah is our song. — Pope John Paul II",
-  "He died so that we can live. Wishing you a blessed Easter.",
-  "Our old history ends with the cross; our new history begins with our resurrection."
+    "Happy Easter.",
+    "May the miracle of Easter fill your heart with love, joy, and peace.",
+    "We are the Easter people and hallelujah is our song. — Pope John Paul II",
+    "He died so that we can live. Wishing you a blessed Easter.",
+    "Our old history ends with the cross; our new history begins with our resurrection."
   ];
 
-  const colors = [
-  "#ff69b4",
-  "#ffcc00",
-  "#66ff99",
-  "#66ccff",
-  "#ff9966"
-  ];
+  const colors = ["#ff69b4", "#ffcc00", "#66ff99", "#66ccff", "#ff9966"];
 
   eggs.forEach(egg => {
-      egg.addEventListener("click", ()=>{
+    egg.addEventListener("click", () => {
+      if (eggActive) return;
+      eggActive = true;
 
-          if(eggActive) return;
-          eggActive = true;
+      // Jump animation
+      egg.classList.add("jump");
 
-          egg.classList.add("jump");
+      // Sparkles
+      for (let i = 0; i < 8; i++) {
+        const sparkle = document.createElement("div");
+        sparkle.classList.add("sparkle");
+        sparkle.style.background = colors[Math.floor(Math.random() * colors.length)];
+        const rect = egg.getBoundingClientRect();
+        sparkle.style.left = (rect.left + rect.width / 2) + "px";
+        sparkle.style.top = (rect.top) + "px";
+        document.body.appendChild(sparkle);
+        setTimeout(() => sparkle.remove(), 2000);
+      }
 
-          for(let i=0;i<8;i++){
-    
-          const sparkle=document.createElement("div");
-          sparkle.classList.add("sparkle");
-          
-          const colors=["#ffb3ec","#fff5a8","#b8ffd6","#b3e6ff","#ffd1a8"];
-          sparkle.style.background=colors[Math.floor(Math.random()*colors.length)];
-          
-          const rect=egg.getBoundingClientRect();
-                      
-          sparkle.style.left=(rect.left+rect.width/2)+"px";
-          sparkle.style.top=(rect.top)+"px";
-          
-          document.body.appendChild(sparkle);
-          
-          setTimeout(()=>sparkle.remove(),3000);
-          }
+      // Show message
+      messageBox.textContent = messages[eggMessageIndex];
+      messageBox.style.color = colors[eggMessageIndex % colors.length];
+      messageBox.style.opacity = 1; // fade in
 
-         messageBox.textContent = messages[eggMessageIndex];
-         messageBox.style.color = colors[eggMessageIndex % colors.length];
-         messageBox.classList.add("show-message");
-         setTimeout(()=>{
-          messageBox.classList.remove("show-message");
-          },4000);
- 
+      // Hide message after 4 seconds
+      setTimeout(() => {
+        messageBox.style.opacity = 0; // fade out
+      }, 4000);
 
-          eggMessageIndex = (eggMessageIndex + 1) % messages.length;
+      // Cycle message
+      eggMessageIndex = (eggMessageIndex + 1) % messages.length;
 
-          setTimeout(()=>{
-              egg.classList.remove("jump");
-              eggActive = false;
-          },3000);
-
-  
-   });
+      // Reset egg animation
+      setTimeout(() => {
+        egg.classList.remove("jump");
+        eggActive = false;
+      }, 3000);
+    });
   });
+
 });
 
 
