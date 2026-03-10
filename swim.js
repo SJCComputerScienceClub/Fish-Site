@@ -1,4 +1,4 @@
-let santaClickAllowed = true;
+// let santaClickAllowed = true;
 
 
 const fishFacing = {
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function startSnowfall(duration = 3000) {
+/* function startSnowfall(duration = 3000) {
     const container = document.getElementById("snowContainer");
 
     // Create snowflakes
@@ -165,7 +165,7 @@ document.getElementById("santaFish").addEventListener("click", function () {
         santaClickAllowed = true;  // re-enable clicking
     }, 3000);
 });
-
+*/
 document.addEventListener("DOMContentLoaded", () => {
 
   // start fish swimming
