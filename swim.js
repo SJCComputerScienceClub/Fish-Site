@@ -206,6 +206,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
           egg.classList.add("jump");
 
+          for(let i=0;i<8;i++){
+    
+          const sparkle=document.createElement("div");
+          sparkle.classList.add("sparkle");
+          
+          const colors=["#ffb3ec","#fff5a8","#b8ffd6","#b3e6ff","#ffd1a8"];
+          sparkle.style.background=colors[Math.floor(Math.random()*colors.length)];
+          
+          const rect=egg.getBoundingClientRect();
+                      
+          sparkle.style.left=(rect.left+rect.width/2)+"px";
+          sparkle.style.top=(rect.top)+"px";
+          
+          document.body.appendChild(sparkle);
+          
+          setTimeout(()=>sparkle.remove(),2000);
+          }
+
           messageBox.textContent = messages[eggMessageIndex];
           messageBox.style.color = colors[eggMessageIndex % colors.length];
           messageBox.classList.add("show-message");
