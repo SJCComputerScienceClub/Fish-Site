@@ -29,7 +29,7 @@
 
 /* jump animation */
 .jump{
-    animation:eggJump 1.2s ease forwards;
+    animation:eggJump 3.0s ease forwards;
 }
 
 @keyframes eggJump{
