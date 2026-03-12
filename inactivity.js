@@ -1,5 +1,5 @@
 let inactivityTimer;
-const timeoutTime = 60000;
+const timeoutTime = 30000;
 
 function resetTimer() {
     clearTimeout(inactivityTimer);
